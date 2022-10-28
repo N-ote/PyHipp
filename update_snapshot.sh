@@ -52,3 +52,4 @@ tail -n +$(($sub_n+1)) ~/cluster-config.yaml >> ~/cluster-config.temp
 mv ~/cluster-config.temp ~/cluster-config.yaml
 
 echo "config file updated"
+
