@@ -22,4 +22,4 @@ hfall = DPT.objects.processDirs(dirs=None, exclude=['*eye*', '*mountains*'], obj
 hfall.save();
 print(time.localtime());"
 
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:600320627072:awsnotify --message "FSJobDone"
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:603560901399:awsnotify --message "FSJobDone"
