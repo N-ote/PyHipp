@@ -15,7 +15,6 @@
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
 import DataProcessingTools as DPT; \
-<<<<<<< HEAD
 import time; \
 import os; \
 t0 = time.time(); \
@@ -24,5 +23,4 @@ DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[*range(1,33)],
 print(time.localtime()); \
 print(time.time()-t0);"
 
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:603560901399:awsnotify --message "RPLS1AJobDone"
-
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:600320627072:awsnotify --message "RS1aJobDone"

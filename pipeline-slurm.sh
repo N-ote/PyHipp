@@ -12,6 +12,7 @@
 #SBATCH -e pipe-slurm.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+
 python -u -c "import PyHipp as pyh; \
 import DataProcessingTools as DPT; \
 import os; \
@@ -31,4 +32,4 @@ DPT.objects.processDirs(level='channel', cmd='import PyHipp as pyh; from PyHipp 
 print(time.localtime()); \
 print(time.time()-t0);"
 
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:603560901399:awsnotify --message "JobDone"
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:600320627072:awsnotify --message "JobDone"
